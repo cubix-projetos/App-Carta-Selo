@@ -34,6 +34,7 @@ class CartaSeloApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      
       routes: {
         "/home": (context) => HomeScreen(),
         "/carta_selo": (context) => CartaSeloScreen(),

@@ -1,3 +1,4 @@
+import 'package:carta_selo/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 const brightness = Brightness.light;
@@ -46,7 +47,17 @@ ThemeData androidTheme() {
         fontFamily: "Quicksand",
       ),
     ),
-    primaryColor: Colors.blue,
-    accentColor: Colors.white,
+    primaryColor: AppColors.cinzaCubix,
+    inputDecorationTheme: InputDecorationTheme(
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: AppColors.cinzaCubix),
+        borderRadius: BorderRadius.circular(30),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.grey),
+      ),
+    ),
+
+    // accentColor: Colors.white,
   );
 }

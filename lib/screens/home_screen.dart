@@ -1,6 +1,6 @@
-
 import 'package:carta_selo/screens/carta_selo.dart';
 import 'package:carta_selo/screens/multi_carta_selo.dart';
+import 'package:carta_selo/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:get/get.dart';
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           elevation: 0,
-          backgroundColor: const Color.fromRGBO(44, 65, 68, 1),
+          backgroundColor: AppColors.cinzaCubix,
           actions: [
             IconButton(
                 icon: const Icon(MaterialCommunityIcons.logout),
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 })
           ],
         ),
-        backgroundColor: const Color.fromRGBO(44, 65, 68, 1),
+        backgroundColor: AppColors.cinzaCubix,
         body: ListView(
           children: <Widget>[
             const SizedBox(

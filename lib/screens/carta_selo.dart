@@ -1,4 +1,3 @@
-
 import 'package:carta_selo/pdf/pdf.dart';
 import 'package:carta_selo/screens/components/cliente.dart';
 import 'package:carta_selo/screens/components/codigo_barras.dart';
@@ -136,7 +135,7 @@ class _CartaSeloScreenState extends State<CartaSeloScreen> {
                   },
                   content: Text("Retorne a tela home"),
                   textConfirm: "Sim",
-                  confirmTextColor: Colors.green,
+                  confirmTextColor: Colors.white,
                   onCancel: () {},
                   textCancel: "Não",
                   cancelTextColor: Colors.red,
@@ -226,7 +225,7 @@ class _CartaSeloScreenState extends State<CartaSeloScreen> {
                     ),
                     textConfirm: "Sim",
                     cancelTextColor: Colors.red,
-                    confirmTextColor: Colors.green,
+                    confirmTextColor: Colors.white,
                     onConfirm: () {
                       setState(() {
                         qtdSelos.clear();

@@ -1,4 +1,5 @@
 import 'package:carta_selo/config/servidor_screen.dart';
+import 'package:carta_selo/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:get/get.dart';
@@ -24,12 +25,12 @@ class _LoadingScreenState extends State<LoadingScreen> {
         backgroundColor:
             Colors.transparent, //const Color.fromRGBO(44, 65, 68, 1),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
               gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color.fromRGBO(44, 65, 68, 1), // Colors.black,
+              AppColors.cinzaCubix, // Colors.black,
               Colors.black, // const Color.fromRGBO(44, 65, 68, 1),
             ],
           )),
@@ -43,23 +44,24 @@ class _LoadingScreenState extends State<LoadingScreen> {
                   });
                 },
                 child: Image.asset(
-                  "assets/images/splash.png",
+                  "assets/images/cubix_logo.png",
                   height: MediaQuery.of(context).size.height * 0.7,
                 ),
               ),
               Container(
+                height: 50,
                 child: OutlinedButton(
                   child: Text(
                     'Entrar',
                     style: GoogleFonts.quicksand(
                         textStyle: const TextStyle(
                             color: Colors.white,
-                            fontSize: 17,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold)),
                   ),
                   style: OutlinedButton.styleFrom(
                     primary: Colors.white,
-                    backgroundColor: const Color.fromRGBO(44, 65, 68, 1),
+                    backgroundColor: AppColors.azulCubix,
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),

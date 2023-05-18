@@ -1,3 +1,4 @@
+import 'package:carta_selo/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,8 +34,8 @@ class _CardHomeState extends State<CardHome> {
         // color:  Colors.green[900]!,
 
         border: Border.all(
-          color: Colors.black,
-          width: 3,
+          color: AppColors.douradoCubix,
+          width: 1,
         ),
         borderRadius: BorderRadius.circular(12),
       ),

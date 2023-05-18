@@ -1,5 +1,5 @@
 abstract class ConexaoApp {
-  static String ip = "192.168.1.174";
+  static String ip = "192.168.1.216";
   static String port = "330";
 
   static alterar(String ip, String port) {

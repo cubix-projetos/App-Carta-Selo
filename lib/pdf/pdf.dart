@@ -2,6 +2,7 @@ import 'package:carta_selo/apis/pdf_api.dart';
 import 'package:carta_selo/apis/pdf_multi_api.dart';
 import 'package:carta_selo/apis/pdf_unico_api.dart';
 import 'package:carta_selo/stores/pdf_store.dart';
+import 'package:carta_selo/styles/colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -53,11 +54,12 @@ class _PdfPageState extends State<PdfPage> {
                 Icon(
                   Icons.share,
                   size: 130,
+                  color: AppColors.azulCubix,
                 ),
                 const SizedBox(height: 40),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.green,
+                    primary: AppColors.cinzaCubix,
                     minimumSize: Size.fromHeight(40),
                   ),
                   child: FittedBox(

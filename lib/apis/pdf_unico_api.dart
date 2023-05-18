@@ -376,6 +376,11 @@ class PdfUnicoApi {
           DateFormat("'São Paulo,' d 'de' MMMM 'de' y", "pt_BR").format(data),
           style: TextStyle(fontSize: 10),
         ),
+        SizedBox(height: 3),
+        Text(
+          DateFormat("'Hora da Emissão: 'hh:mm'", "pt_BR").format(data),
+          style: TextStyle(fontSize: 10),
+        ),
       ],
     );
   }

@@ -1,4 +1,5 @@
 import 'package:carta_selo/apis/produtos_api.dart';
+import 'package:carta_selo/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
@@ -67,11 +68,32 @@ class _CodigoBarrasContainerState extends State<CodigoBarrasContainer> {
               onPressed: () {
                 scanBarcodeNormal();
               },
-              icon: Icon(Icons.search),
+              icon: Container(
+                child: Transform.scale(
+                  scale:
+                      1.8, // Ajuste o valor conforme necessário para aumentar ou diminuir o tamanho do ícone
+                  child: CircleAvatar(
+                    backgroundColor: AppColors.cinzaCubix,
+                    child: const Icon(
+                      Icons.search,
+                      size: 17,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
             ),
             labelText: "Código de Barras",
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.blue),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey),
+              borderRadius: BorderRadius.circular(30),
             ),
           ),
         ),
@@ -84,7 +106,15 @@ class _CodigoBarrasContainerState extends State<CodigoBarrasContainer> {
           decoration: InputDecoration(
             labelText: "Descrição do Produto",
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.blue),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey),
+              borderRadius: BorderRadius.circular(30),
             ),
           ),
         ),

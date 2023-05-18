@@ -333,7 +333,12 @@ class PdfMultiApi {
         ),
         SizedBox(height: 5 * PdfPageFormat.mm),
         Text(
-          DateFormat("'São Paulo,' d 'de' MMMM 'de' y", "pt_BR").format(data),
+          DateFormat("'São Paulo,' d 'de' MMMM 'de' y"  , "pt_BR").format(data),
+          style: TextStyle(fontSize: 10),
+        ),
+         SizedBox(height: 3),
+        Text(
+          DateFormat("'Hora da Emissão: 'hh:mm'", "pt_BR").format(data),
           style: TextStyle(fontSize: 10),
         ),
       ],
